@@ -20,6 +20,7 @@ class User:
 class Admin(User):
     def __init__(self, id, name):
         super().__init__(id, name)
+# Или так: _User__access_level, или понижать уровень с __ до _
         self._User__access_level = 'admin'
         self.__user_list = []
 
